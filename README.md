@@ -10,14 +10,6 @@ board_string = "----------2-65-------18--4--9----6-4-3---57-------------------73
 
 solved_board = solve(board_string)
 
-if solved?(solved_board)
+puts "The board was solved!" if solved?(solved_board)
 
-  puts "The board was solved!"
-  
-  puts pretty_board(solved_board)
-  
-else
-
-  puts "The board wasn't solved."
-  
-end
+puts pretty_board(solved_board)
